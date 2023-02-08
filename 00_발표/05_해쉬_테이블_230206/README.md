@@ -184,12 +184,12 @@ remove method에서는 key값을 찾기 위해서 에서 알맞은 위치로 조
 **Load factor**는 전체 테이블 크기에서 데이터가 차지하는 공간의 비를 말하며 Load factor의 값이 1에 가까워 질 수록(데이터가 차지하는 공간이 증가 할 수록) 연산 속도가 감소한다. 
 </br>
 
-<imag src =https://user-images.githubusercontent.com/123693844/216984281-59a98ffc-b206-42c1-84f1-882d70697a83.png width = 800 >
+<img src =https://user-images.githubusercontent.com/123693844/216984281-59a98ffc-b206-42c1-84f1-882d70697a83.png width = 800 >
                                              <Load factor에 따른 수행시간 그래프 >
 
 그래서 **Load factor**를 일정하게 범위 안에서 유지하기 위해서 테이블의 크기를 일정한 값이 되면 2배로 늘려주는 방법을 사용하기도 하며, 보통 데이터가 50% 이하 공간을 점유하도록 유지하면 연산 속도는 O(1)을 가진다.  
 
-<imag src = https://user-images.githubusercontent.com/123693844/216984368-a2505fc3-b5f4-4e6a-95ef-10a64abe9162.png width = 800 >
+<img src = https://user-images.githubusercontent.com/123693844/216984368-a2505fc3-b5f4-4e6a-95ef-10a64abe9162.png width = 800 >
                                < Load fator 특정값으로 유지 시 각 cluster의 연산속도는 O(1)> 
 
 <br>				       
@@ -200,7 +200,7 @@ remove method에서는 key값을 찾기 위해서 에서 알맞은 위치로 조
 
 </br>
 	
-<imag src = https://user-images.githubusercontent.com/123693844/216984413-f8d0a02e-11ea-4f7d-b2f2-6625cc599f1a.png width = 800 >
+<img src = https://user-images.githubusercontent.com/123693844/216984413-f8d0a02e-11ea-4f7d-b2f2-6625cc599f1a.png width = 800 >
                                                   < chaining 동작 > 
 				       
 **chaining method psudo code** 
